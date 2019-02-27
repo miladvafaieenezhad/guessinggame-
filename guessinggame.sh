@@ -8,11 +8,7 @@ do
   echo "your new guess: $response"
 done
 }
-for m in $(ls -A) #considering hidden files
-do
- let count=$count+1
- done
-let x=$count
+x=$(find . -maxdepth 1 -type f | wc -l)
 function high {
 echo "sorry, $response is too high"
 }
