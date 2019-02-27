@@ -18,7 +18,7 @@ echo "sorry, $response is too low"
 echo "how many files are in the current directory?:"
 read response
 echo "you guess: $response"
-while [[ $response -ne $x ]]
+while [[ ! $response =~ $x ]]
   do
   forbidden
       if [[ $response -gt $x ]]
