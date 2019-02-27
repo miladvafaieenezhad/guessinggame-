@@ -8,12 +8,10 @@ do
   echo "your new guess: $response"
 done
 }
-
-for m in $(ls -al) #consider hidden files
+for m in $(ls -A) #considering hidden files
 do
  let count=$count+1
  done
-let count=$count-1  #-1 for total, which is not file.
 let x=$count
 function high {
 echo "sorry, $response is too high"
