@@ -15,8 +15,7 @@ while [[ ! $response =~ ^[0-9]+$ ]]
   echo "try again:"
   read response
   echo "your new guess: $response"
-done
-while [[ $response -ne $x ]]
+while [[ $response =~ ^[0-9]+$  ]]
  do
       if [[ $response -gt $x ]]
       then
@@ -32,5 +31,5 @@ while [[ $response -ne $x ]]
       echo "your new guess: $response"
       fi
 done
+done
 echo "~*~*~congratulation~*~*~"
-
